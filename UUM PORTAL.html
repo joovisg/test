@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//en" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0119)https://auth.uum.edu.my/nidp/idff/sso?id=3&sid=0&option=credential&sid=0&target=https://portal5.uum.edu.my/Profile.aspx -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UUM Portal Beta</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="fix-header">
+		<img src="https://auth.uum.edu.my/nidp/images/bannerPortal.png" alt="">
+	</div>
+	<div class="main">
+		<form action="https://auth.uum.edu.my/nidp/idff/sso?sid=0&amp;sid=0" name="IDPLogin" enctype="application/x-www-form-urlencoded" method="POST" autocomplete="off">
+			<input type="hidden" name="option" value="credential">				
+			<input type="hidden" name="target" value="https://portal5.uum.edu.my/Profile.aspx">	
+			<div style="display:none">
+				<input type="radio" name="User_Type" value="stafsso" checked="checked">&nbsp;Staff&nbsp;						
+				<input type="radio" name="User_Type" value="studentsso" onclick="window.open(&#39;http://umis.uum.edu.my&#39;)">&nbsp;Student&nbsp;							
+				<input type="radio" name="User_Type" value="others" onclick="window.open(&#39;http://umis.uum.edu.my&#39;)">&nbsp;Public
+			</div>
+			<div class="login">
+				<h1>LOGIN</h1>
+				<div class="form">
+					<div class="form-group">
+						<label for="id">ID</label>
+						<input type="text" name="Ecom_User_ID" id="Ecom_User_ID" placeholder="Username" autocomplete="off" autocomplete="off">
+					</div>
+					<div class="form-group">
+						<label for="pw">Password</label>
+						<input type="password" name="Ecom_Password" id="Ecom_Password" placeholder="Password" autocomplete="off" webkit-autofill="" white="">
+					</div>
+					<a href="https://auth.uum.edu.my/sspr/public/ForgottenPassword">Forget Password?</a>
+				</div>
+				<div class="btn">
+					<input name="B1" type="submit" class="inputButton" id="login" value="Login" onclick="if(form1.userID.value != &#39;&#39; &amp;&amp; form1.userPassword.value != &#39;&#39;) {return true;} else {alert(&#39;Please insert Username and Password&#39;); form1.userID.focus(); return false; }">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="fix-footer">
+		<p><a href="https://auth.uum.edu.my/sspr/public/ForgottenPassword" target="_parent"><font color="#FF0000">Forgot Password?</font></a> | <a href="http://asisonline.uum.edu.my/portal/ForgotUnameStud.aspx" target="_parent"><font color="#FF0000">Forgot Username?</font></a> | User Manual for Staff:<a href="http://it.uum.edu.my/images/documents/uumportalusermanual-malay.pdf" target="_blank"><font color="#FF0000">Bahasa </font> or </a><a href="http://it.uum.edu.my/images/documents/uumportalusermanual-eng.pdf" target="_blank"><font color="#FF0000">English</font></a>
+			| User Manual for Student : <a href="http://it.uum.edu.my/images/documents/uumstudentportal_usermanual.pdf" target="_blank"><font color="#FF0000">English </font>
+			| Need Help? Call : +604-928 6666/6622/6644 or Email :</a><a href="mailto:itservices@uum.edu.my"><font color="#FF0000">itservices@uum.edu.my</font></a> 
+			| </p> 
+			<p>© Copyright 2022 - Universiti Utara Malaysia </p>
+		  <!--<p> <font color="#FFFF00">
+	  Best viewed using any browsers with resolution of 1280 x 720 or higher.</font> </p>
+			  -->		
+	</div>
+	
+</body>
+</html>
